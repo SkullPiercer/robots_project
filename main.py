@@ -13,8 +13,7 @@ def min_platforms(weights: list[int], limit: int) -> int:
 
 
 if __name__ == '__main__':
-    robots_weights = input()
-    robots_list = [int(i) for i in robots_weights.split()]
+    robots_list = [int(i) for i in input().split()]
     platform_limit = int(input())
     result = min_platforms(robots_list, platform_limit)
     print(result)
